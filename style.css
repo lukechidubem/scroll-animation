@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,500;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,900&family=Poppins:ital,wght@0,300;0,700;1,100;1,400;1,700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(132, 161, 141);
+  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+h2 {
+  margin: 20px;
+}
+
+.box {
+  background-color: rgb(58, 155, 187);
+  color: white;
+  width: 400px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 15px;
+  border-radius: 16px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+  transform: translateX(-1000px);
+  transition: transform 0.5s;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(1000px);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+h3 {
+  font-size: 50px;
+}
